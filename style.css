@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    color: white;
+    /* height: 100px; */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav .contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-01,
+.contact-02 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-02 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo img {
+    mix-blend-mode: lighten;
+    opacity: 1;
+}
+
+.tel, .sms{
+    border-right: 1px solid gray;
+    padding-right: 5px;
+}
+
+.background{
+    background: url(assets/bg1.jpg);
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+}
+
+
+.content-01 {
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 9;
+    width: 40%;
+    /* height: 15%; */
+    top: 380px;
+    left: 100px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-01 span {
+    display: block;
+}
+
+.span1 {
+    margin-bottom: -15px;
+}
+
+.span1,
+.span2 {
+    font-size: 40px;
+}
+
+.span3 {
+    font-size: 24px;
+    text-decoration: underline;
+
+}
+.span4{
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.explore {
+    position: absolute;
+    padding: 5px 10px;
+    left: 100px;
+    top: 580px;
+    background-color: black;
+    opacity: 0.4;
+    color: white;
+}
+
+.extend-menu {
+    width: 75%;
+    /* height: 200px; */
+    display: none;
+    flex: 1;
+    background-color: black;
+    opacity: 0.6;
+    justify-content: space-between;
+    /* height: 40vh; */
+    right: 0;
+    top: 100px;
+    z-index: 999;
+    position: absolute;
+    border: 2px solid green;
+
+}
+
+.em1 ul li{
+    list-style: none;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    transition: all  ease;
+}
+
+.em2 ul li{
+    list-style: none;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    transition: all  ease;
+}
+
+.em1 ul li:hover{
+    background-color: black;
+    opacity: 1;
+    color: green;
+}
+
+.em2 ul li:hover{
+    background-color: black;
+    opacity: 1;
+    color: green;
+}
+
+.change-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 450px;
+    background: transparent;
+    padding: 20px  0px;
+}
+
+.change-btn button {
+    width: 20px;
+    height: 14px;
+    background-color: white;
+    border: none;
+    margin-bottom: 5px;
+}
+
+
+.change-btn button.active {
+    background-color: green;
+  }
+
+@media only screen and (max-width: 768px) { 
+    header {
+         padding: 5px; 
+        } 
+    header nav {
+         flex-direction: column;
+         /* height: auto; */
+         } 
+    .menu {
+         flex-direction: column; 
+        } 
+    .contact-01, .contact-02 {
+         flex-direction: row; 
+         justify-content: center; 
+        } 
+    .content-01 {
+         width: 60%;
+          top: 300px; 
+          left: 30px; 
+          font-size: 30px;
+        } 
+    .explore {
+         top: 550px;
+         left: 30px; 
+        } 
+    .extend-menu {
+         width: 100%; 
+         top: 150px; 
+         font-size: small;
+         padding: 2px;
+        } 
+    .change-btn {
+         top: 500px; 
+        } 
+}
